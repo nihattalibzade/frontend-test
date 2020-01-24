@@ -1,0 +1,5 @@
+@import "../../../styles";
+
+.itemText {
+  @include fontSize(20,31);
+}

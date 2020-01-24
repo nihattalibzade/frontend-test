@@ -1,1 +1,13 @@
-<p>tree works!</p>
+<div class="card my-3">
+  <div class="card-body">
+    <span class="itemText">
+      {{ model.title }}
+    </span>
+    <a routerLink= "/items/{{model.id}}">
+      <button type="button" class="btn btn-primary float-right">Button</button>
+    </a>
+  </div>
+</div>
+<ul>
+  <app-tree *ngFor="let child of model.children" [model]="child"></app-tree>
+</ul>

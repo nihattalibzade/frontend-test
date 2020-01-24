@@ -34,9 +34,9 @@ export class BodyComponent implements OnInit {
   }
   ngOnInit() {
     this.itemsService.getAllItems().subscribe((data: Item[]) => {
-        this.items = data;
+      this.items = data;
+      this.itemsTreeView = BodyComponent.createTreeView(this.items);
     });
-    this.itemsTreeView = BodyComponent.createTreeView(this.items);
   }
 
 }

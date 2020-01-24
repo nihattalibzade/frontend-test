@@ -3,25 +3,16 @@
     <div class="col-sm-12">
       <div class="pt-5">
         <div class="input-group">
-          <input class="form-control py-2 mr-1 pr-5" placeholder="Search..." type="search" [(ngModel)]="title" id="example-search-input">
+          <input class="form-control py-2 mr-1 pr-5" placeholder="Search..." type="search" [(ngModel)]="title" id="search-input">
           <span class="input-group-append">
             <button class="btn rounded-pill ml-n5" type="button">
-                <img src="../../../assets/Path%203560.svg" class="sidebar__image" alt="search">
+                <img src="../../../assets/Path%203560.svg" class="itemContainer__searchBox" alt="search">
             </button>
           </span>
         </div>
       </div>
-      <div *ngFor="let item of items | search:title">
-        <div class="card my-3">
-          <div class="card-body">
-            <span>
-              {{ item.title }}
-            </span>
-            <a routerLink= "/items/{{item.id}}">
-              <button type="button" class="btn btn-primary float-right">Button</button>
-            </a>
-          </div>
-        </div>
+      <div *ngFor="let item of itemsTreeView; let i = index">
+        <app-tree [model]="itemsTreeView[i]"></app-tree>
       </div>
     </div>
   </div>

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Item } from '../../interfaces/item';
 
 @Component({
   selector: 'app-tree',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TreeComponent implements OnInit {
 
+  @Input() model: Item;
   constructor() { }
 
   ngOnInit() {
