@@ -10,15 +10,12 @@ import { ItemsService } from '../../services/items.service';
 export class BodyComponent implements OnInit {
 
   title = '';
-  orderedItems: any[];
+  itemsTreeView: any[];
   items: Item[] = [];
   constructor(private itemsService: ItemsService) {}
 
   ngOnInit() {
-    this
-      .itemsService
-      .getAllItems()
-      .subscribe((data: Item[]) => {
+    this.itemsService.getAllItems().subscribe((data: Item[]) => {
         this.items = data;
     });
   }

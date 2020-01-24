@@ -10,9 +10,11 @@ import { BodyComponent } from './components/body/body.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { ItemsService } from './services/items.service';
 import { FormsModule } from '@angular/forms';
+import { TreeComponent } from './components/tree/tree.component';
+import { ItemDetailComponent } from './components/item-detail/item-detail.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, HeaderComponent, BodyComponent, SidebarComponent],
+  declarations: [AppComponent, HomeComponent, HeaderComponent, BodyComponent, SidebarComponent, TreeComponent, ItemDetailComponent],
   imports: [BrowserModule, HttpClientModule, AppRoutingModule, FormsModule],
   providers: [ItemsService],
   bootstrap: [AppComponent]
