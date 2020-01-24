@@ -9,10 +9,11 @@ import { HeaderComponent } from './components/header/header.component';
 import { BodyComponent } from './components/body/body.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { ItemsService } from './services/items.service';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [AppComponent, HomeComponent, HeaderComponent, BodyComponent, SidebarComponent],
-  imports: [BrowserModule, HttpClientModule, AppRoutingModule],
+  imports: [BrowserModule, HttpClientModule, AppRoutingModule, FormsModule],
   providers: [ItemsService],
   bootstrap: [AppComponent]
 })
