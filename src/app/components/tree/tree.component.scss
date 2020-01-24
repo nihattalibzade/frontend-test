@@ -2,4 +2,7 @@
 
 .itemText {
   @include fontSize(20,31);
+  @media screen and (max-width: $medium-screen) {
+    @include fontSize(14,17);
+  }
 }
