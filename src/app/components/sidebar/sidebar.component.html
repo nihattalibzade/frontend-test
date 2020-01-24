@@ -1,1 +1,17 @@
-<p>sidebar works!</p>
+<div class="col-md-3 col-sm-12 sidebar flex-column float-md-left">
+  <div class="d-inline-block my-5 text-center">
+    <img src="../../../assets/nicebeauty.com_eu_@2x.png" class="figure-img sidebar__image" alt="sidebar image">
+    <p class="sidebar__image__text">hairstylist.com</p>
+  </div>
+  <div class="container-fluid">
+    <div class="container-sm sidebar__menu">
+      <ul *ngFor="let title of menuTitles" class="list-unstyled my-3">
+        <li>
+        <p class="sidebar__menu__title">
+          {{ title }}
+        </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

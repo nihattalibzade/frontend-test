@@ -1,0 +1,22 @@
+@import "../../../styles";
+
+.sidebar {
+  background-color: $element-color;
+  .sidebar__image {
+    width: 80%;
+    .sidebar__image__text {
+      @include fontSize(14,17);
+    }
+  }
+  .sidebar__menu {
+    width: 80%;
+    .sidebar__menu__title {
+      @include fontSize(14,18);
+      font-weight: lighter;
+    }
+  }
+
+  @media screen and (max-width: $medium-screen) {
+    text-align: center;
+  }
+}

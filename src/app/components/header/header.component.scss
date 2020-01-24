@@ -1,0 +1,10 @@
+@import "../../../styles";
+
+.header {
+  background-color: $element-color;
+  @include border;
+}
+
+.header__profileText {
+  @include fontSize(14,17);
+}

@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidebarComponent implements OnInit {
 
+  menuTitles: string [] = [];
+
   constructor() { }
 
   ngOnInit() {
+    this.menuTitles = ['Marketing Plan', 'Dashboard', 'My Ads', 'Analytics', 'Cobiro Store'];
   }
 
 }
