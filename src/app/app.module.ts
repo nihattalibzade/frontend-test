@@ -12,9 +12,11 @@ import { ItemsService } from './services/items.service';
 import { FormsModule } from '@angular/forms';
 import { TreeComponent } from './components/tree/tree.component';
 import { ItemDetailComponent } from './components/item-detail/item-detail.component';
+import { SearchPipe } from './pipes/search.pipe';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, HeaderComponent, BodyComponent, SidebarComponent, TreeComponent, ItemDetailComponent],
+  declarations: [AppComponent, HomeComponent, HeaderComponent, BodyComponent,
+    SidebarComponent, TreeComponent, ItemDetailComponent, SearchPipe],
   imports: [BrowserModule, HttpClientModule, AppRoutingModule, FormsModule],
   providers: [ItemsService],
   bootstrap: [AppComponent]
