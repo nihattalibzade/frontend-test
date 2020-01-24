@@ -12,10 +12,16 @@
         </div>
       </div>
       <div *ngFor="let item of items | search:title">
-        {{item.title}}
-        <a routerLink= "/items/{{item.id}}">
-          <button type="button" class="btn btn-primary float-right">Button</button>
-        </a>
+        <div class="card my-3">
+          <div class="card-body">
+            <span>
+              {{ item.title }}
+            </span>
+            <a routerLink= "/items/{{item.id}}">
+              <button type="button" class="btn btn-primary float-right">Button</button>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
